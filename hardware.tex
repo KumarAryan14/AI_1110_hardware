@@ -2,11 +2,12 @@
 
 \let\negmedspace\undefined
 \let\negthickspace\undefined
-\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\documentclass[journal,12pt]{IEEEtran}
 %\documentclass[conference]{IEEEtran}
 %\IEEEoverridecommandlockouts
 % The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
 \usepackage{cite}
+\usepackage{caption}
 \usepackage{amsmath,amssymb,amsfonts,amsthm}
 \usepackage{algorithmic}
 \usepackage{graphicx}
@@ -317,8 +318,9 @@ columns=fullflexible
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.5\linewidth]{circuit.jpeg}
-	\caption{Circuit}
-	\label{}
+	\captionsetup{justification=centering}
+	\caption*{ Circuit}
+	\label{fig:view}
 \end{figure}
 
 \subsection*{Setup -} The above circuit uses 5V power source from 'USB micro B breakout board' which acts as VCC for the circuit. The clock signal is carried by the bus mentioned with 'c'(right most). The second last from right and last from left is for VCC and second last from left is for Ground (GND).
@@ -336,22 +338,25 @@ The time period can be changed using different combinations of resistors and cap
 \section*{Block Diagram and Working Photo :}
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=1\linewidth]{hardware.png}
-	\caption{Block Diagram}
+	\includegraphics[width=1.2\linewidth]{hardware.png}
+	\captionsetup{justification=centering}
+	\caption*{Block Diagram}
 	\label{fig:view}
 \end{figure}
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.5\linewidth]{C1.jpeg}
-	\caption{working photo 1}
-	\label{}
+	\captionsetup{justification=centering}
+	\caption*{working photo 1}
+	\label{fig:view}
 \end{figure}
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.5\linewidth]{C2.jpeg}
-	\caption{working photo 2}
-	\label{}
+	\captionsetup{justification=centering}
+	\caption*{working photo 2}
+	\label{fig:view}
 \end{figure}
 
 
